@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card Swipes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<label for="entry">Submission Details</label>
+<input id="entry" type="text">
+<input id="submission" type="button" class="btn btn-secondary" value="Submit" onclick="processInformation()">
+<input id="downloadButton" type="button" class="btn btn-secondary" value="Download spreadsheet" onclick="download('attendance.csv','csv')">
+<table class="table table-hover table-striped" id="entries">
+    <tr>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Sign In Time</th>
+        <th scope="col">Sign Out Time</th>
+    </tr>
+    <tbody id="table-body"></tbody>
+</table>
+<script src="script.js"></script>
+</body>
+</html>
